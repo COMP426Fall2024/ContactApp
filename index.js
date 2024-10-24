@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 
-const cors = require('cors');
-app.use(cors());
+// If client-side is being served by a different web server than
+// back end, uncomment the following two lines.
+
+// const cors = require('cors');
+// app.use(cors());
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
